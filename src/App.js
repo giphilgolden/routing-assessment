@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact";
 import { Route,Switch } from 'react-router-dom';
 import Navigation from "./components/navigation/Navigation"
 import FourOhFour from "./components/FourOhFour/FourOhFour"
+import Jeopardy from './components/jeopardy/Jeopardy';
 
 function App() {
   return (
@@ -41,6 +42,14 @@ function App() {
           path="/contact"
           component={Contact}
         />
+
+        <Route 
+          exact
+          path="/jeopardy"
+          component={Jeopardy}
+        />
+
+      
 
         <Route 
         component={FourOhFour}
